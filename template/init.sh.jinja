@@ -3,6 +3,11 @@ set -euo pipefail
 
 PROJECT_NAME="{{ project_name }}"
 
+# Ensure bun is on PATH (handles installs to ~/.bun/bin not yet in shell PATH)
+if ! command -v bun &>/dev/null; then
+  export PATH="${HOME}/.bun/bin:${PATH}"
+fi
+
 echo "Setting up ${PROJECT_NAME}..."
 
 # ---------------------------------------------------------------------------
