@@ -19,10 +19,11 @@ cp -r frontend/ "${_overlay_dir}/frontend_overlay"
 rm -rf frontend
 
 # Scaffold a fresh TanStack Start project
-bunx --bun shadcn@latest create \
+bunx --bun shadcn@latest init \
   --preset "https://ui.shadcn.com/init?base=base&style=mira&baseColor=neutral&theme=indigo&iconLibrary=lucide&font=geist&menuAccent=subtle&menuColor=default&radius=medium&template=start&rtl=false" \
   --template start \
-  frontend
+  --name frontend \
+  -y
 
 # Remove nested git repo created by shadcn (we use the root-level repo)
 rm -rf frontend/.git
