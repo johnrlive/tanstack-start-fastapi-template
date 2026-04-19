@@ -51,7 +51,7 @@ bun --version && uv --version && just --version && jj --version && lefthook --ve
 Generate a new project with [Copier](https://copier.readthedocs.io/):
 
 ```bash
-uvx copier copy --trust gh:Ameyanagi/tanstack-start-fastapi-template my-project
+uvx copier copy --trust gh:johnrlive/tanstack-start-fastapi-template my-project
 ```
 
 You will be prompted for:
@@ -73,7 +73,7 @@ After rendering the template files, Copier automatically runs a setup script tha
 If you use [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [OpenCode](https://opencode.ai/), or another agent that supports skills, install the skill and use it to scaffold the project interactively:
 
 ```bash
-npx skills add Ameyanagi/tanstack-start-fastapi-template
+npx skills add johnrlive/tanstack-start-fastapi-template
 ```
 
 ## After Generation
